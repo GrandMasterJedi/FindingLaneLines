@@ -45,6 +45,10 @@ One potential shortcoming would be what would happen when ...
 
 Another shortcoming could be ...
 
+
+Filter hough lines based on the position before regressing a line through all the extreme points of the line. The position is set to mid vertical point plus 10%
+
+
 ### 3. Suggest possible improvements to your pipeline
 
 A possible improvement would be to ...
