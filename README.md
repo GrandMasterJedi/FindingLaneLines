@@ -2,23 +2,23 @@
 
 This repository contains the program pipeline to identify lane lines from pictures or videos taken from a car-mounted camera. The identified lines on the road would serve as a constant reference for where to steer the vehicle.
 
-This project is my solution to one assignment (1.1) of the Udacity Self Driving Nanodegree. I detect lines using Python and OpenCV.
+This project is my solution to assignment (1.1) of the Udacity Self Driving Nanodegree. I detect lines using Python and OpenCV.
 
  
 ---
 ## Examples
+The Jupitter Notebook FindLaneLines.ipynb contains the pipeline as a function and also the code to test on the test images and test videos
+The directory test_video_output contains the result of the program pipeline applied to three clips.
 
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
-* 
-Insert Examples below
-```
-code section
-```
 [//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./Example/0_OriginalPic.jpg "Picture1"
+[image2]: ./Example/1_WhiteYellowMask.jpg "Color Mask"
+[image3]: ./Example/2_GrayScale.jpg "Gray Scale"
+[image4]: ./Example/3_GaussianBlur.jpg "Gaussian Smoothing"
+[image5]: ./Example/4_CannyEdges.jpg "Canny Edges"
+[image6]: ./Example/5_RegionInterest.jpg "Region of Interest"
+[image7]: ./Example/6_IdentifiedLines.jpg "Hough Lines"
+[image8]: ./Example/7_FinalWeighted.jpg "Final Lane Lines"
 
 ---
 
@@ -36,6 +36,10 @@ If you'd like to include images to show how the pipeline works, here is how to i
 ![alt text][image1]
 
 ### 2. Identify potential shortcomings with your current pipeline
+```
+code section
+```
+
 
 The present program pipeline have shortcoming with road that contain many signs
 One problem is the canny edge 
@@ -55,16 +59,10 @@ A possible improvement would be to ...
 
 Another potential improvement could be to ...
 
+
 ---
 ## Resources
 * [Udacity Self-Driving Car Nanodegree](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013) 
 * Udacity [project assignment and template](https://github.com/udacity/CarND-LaneLines-P1)
 * Project [rubric](https://review.udacity.com/#!/rubrics/322/view)
----=
-
-
-
-
-
-
-
+---
