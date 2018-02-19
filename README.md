@@ -10,6 +10,7 @@ This project is my solution to assignment (1.1) of the Udacity Self Driving Nano
 The Jupitter Notebook FindLaneLines.ipynb contains the pipeline as a function and also the code to test on the test images and test videos. To try the pipeline download the notebook, test_images and test_videos directories and run the code on the notebook. 
 
 [//]: # (Image References)
+
 [image1]: ./example/0_OriginalPic.jpg "Picture1"
 [image2]: ./example/1_WhiteYellowMask.jpg "Color Mask"
 [image3]: ./example/2_GrayScale.jpg "Gray Scale"
@@ -18,7 +19,6 @@ The Jupitter Notebook FindLaneLines.ipynb contains the pipeline as a function an
 [image6]: ./example/5_RegionInterest.jpg "Region of Interest"
 [image7]: ./example/6_IdentifiedLines.jpg "Hough Lines"
 [image8]: ./example/7_FinalWeighted.jpg "Final Lane Lines"
-
 [image9]: ./example/ManySignRoad.jpg "ChallengeImage"
 [image10]: ./example/outManySignRoad.jpg "ChallengeImageOut"
 
@@ -91,8 +91,6 @@ The challenge video has several aspects that make the lane line identification d
 A possible improvement is to make the color selection, and region selection more general (less strict) and modify the sanity filter to performs well for other challenging videos such as driving in raining weather or driving in cities where the road may have many signs.
 
 The color filter may be completely dropped or it can be applied, with different color gradient conditions, after grayscaling or another color transform, in order to avoid miss-detecting lane lines during night driving.
-
-
 
 
 
